@@ -1,0 +1,3 @@
+#!/bin/bash
+
+docker run -it --rm --name sbt -v "$PWD":/usr/src/prj -v "$HOME/.ivy2":/root/.ivy2 -w /usr/src/prj luchesar/sbt:0.13.8-jdk-7 sbt $@
